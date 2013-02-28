@@ -1,0 +1,11 @@
+{% for section, sectionName in sections %}
+<h2>{{ sectionName }}</h2>
+<ul class="questions" id="section_{{ section }}">
+{% for question in questions if question.section == section %}
+	<li class="question">
+	{% include "Question/renderInInterviewForm.html.twig" %}
+	</li>
+{% endfor %}
+	<li class="has_none">None</li>
+</ul>
+{% endfor %}

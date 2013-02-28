@@ -1,0 +1,8 @@
+{% extends "genericForm.html.twig" %}
+{% block tbody %}
+{{ genericForm.row('name', 'Name', model) }}
+{{ genericForm.rowSelect(interviewIdCol, 'Interview', interviews, model) }}
+{{ genericForm.rowSelect('section', 'Section', sections, model) }}
+{{ genericForm.rowTextarea('text', 'Question', model) }}
+{{ genericForm.rowTextarea('code', 'Code', model) }}
+{% endblock %}

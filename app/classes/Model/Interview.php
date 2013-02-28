@@ -24,6 +24,11 @@ class ModelInterview extends ModelApp
 	protected static $Table = 'interviews';
 	protected static $IdCol = 'in_id';
 	protected static $AllData = array();
+    protected static $sections = array(
+        0 => 'Introduction',
+        1 => 'Body',
+        2 => 'Conclusion',
+    );
 
     /**
      * @return ModelInterviewType
@@ -31,6 +36,11 @@ class ModelInterview extends ModelApp
     public function getType()
     {
         return ModelInterviewType::findOwner($this);
+    }
+
+    public static function getSections()
+    {
+        return self::$sections;
     }
 
     protected $createTable = "
