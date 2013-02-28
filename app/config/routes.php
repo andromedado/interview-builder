@@ -1,2 +1,2 @@
 <?php
-FilterRoutes::addRoute('', array('Pages', 'homepage'));
+FilterRoutes::addRoute('', array('Interview'));
