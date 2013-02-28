@@ -17,6 +17,9 @@ class ControllerQuestion extends ControllerMagic
                 if (!empty($args)) {
                     $settings['Model'] = new ModelQuestion;
                     $settings['Model']->in_id = $args[0];
+                    if (isset($args[1])) {
+                        $settings['Model']->section = $args[1];
+                    }
                 }
             break;
         }
