@@ -1,5 +1,6 @@
 <a href="{{ question.updateHref }}" class="fr">edit</a>
 <label>
 	<input type="checkbox" name="questions[]" value="{{ question.id }}"{% if question.checked %} checked="checked"{% endif %} />
+	<b>{{ question.name }}</b>
 	{{ question.shortText }}
 </label>

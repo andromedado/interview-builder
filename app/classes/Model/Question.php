@@ -2,7 +2,7 @@
 
 class ModelQuestion extends ModelApp
 {
-    const SHORT_LENGTH = 20;
+    const SHORT_LENGTH = 30;
 
     protected $qu_id;
     protected $in_id;

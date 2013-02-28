@@ -31,6 +31,14 @@ class ModelInterview extends ModelApp
     );
 
     /**
+     * @return Array
+     */
+    public function getQuestions()
+    {
+        return ModelQuestion::findAllBelongingTo($this);
+    }
+
+    /**
      * @return ModelInterviewType
      */
     public function getType()

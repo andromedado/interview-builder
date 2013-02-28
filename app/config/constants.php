@@ -1,9 +1,9 @@
 <?php
 /* Settings that are variable between applications */
 /** Application Strings **/
-define('DEFAULT_SITE_HOST', 'radcanon-app.com');
-define('DEFAULT_PAGE_TITLE', 'RadCanon - App');
-define('APP_NAME', 'RADCanon App');
+define('DEFAULT_SITE_HOST', 'interview-builder.com');
+define('DEFAULT_PAGE_TITLE', 'Interview Builder');
+define('APP_NAME', 'Interview Builder');
 
 /** Application Info **/
 define('APP_SUB_DIR' , '');//No Trailing Slash
@@ -37,4 +37,6 @@ define('WEBROOT_DIR', SERVER_PREFIX . DS);
 define('UPDIR_ROOT', WEBROOT_DIR . 'uploads' . DS);//With Trailing Slash
 define('IMAGE_NOT_FOUND_FILE', WEBROOT_DIR . 'images' . DS . 'notFound.jpg');
 define('IMAGE_NOT_FOUND_TYPE', 'image/jpeg');
+define('JS_DIR', WEBROOT_DIR . 'js' . DS);
+define('CSS_DIR', WEBROOT_DIR . 'css' . DS);
 

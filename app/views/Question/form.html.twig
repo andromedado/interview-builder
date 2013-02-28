@@ -3,6 +3,7 @@
 {{ genericForm.row('name', 'Name', model) }}
 {{ genericForm.rowSelect(interviewIdCol, 'Interview', interviews, model) }}
 {{ genericForm.rowSelect('section', 'Section', sections, model) }}
-{{ genericForm.rowTextarea('text', 'Question', model) }}
-{{ genericForm.rowTextarea('code', 'Code', model) }}
+{{ genericForm.rowSelect('defaultChecked', 'Included by default', checkedOptions, model) }}
+{{ genericForm.rowTextarea('text', 'Question', model, 5, 80) }}
+{{ genericForm.rowTextarea('code', 'Code', model, 5, 80) }}
 {% endblock %}
